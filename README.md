@@ -4,7 +4,7 @@ A full-stack CRM application built with MongoDB, Express, React, and Node.js.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mini-crm/
@@ -14,7 +14,7 @@ mini-crm/
 
 ---
 
-## ⚙️ Local Setup & Running
+##  Local Setup & Running
 
 ### Prerequisites
 - Node.js v18+
@@ -80,7 +80,7 @@ Frontend runs on: **http://localhost:3000**
 
 ---
 
-## 🔐 Authorization Logic
+##  Authorization Logic
 
 | Action | Who can do it |
 |--------|--------------|
@@ -106,57 +106,7 @@ Frontend runs on: **http://localhost:3000**
 
 ---
 
-## 🚀 Deployment Guide
-
-### Backend → Render (Free Tier)
-
-1. Push your code to GitHub (backend folder or full repo)
-2. Go to [render.com](https://render.com) → New → **Web Service**
-3. Connect your GitHub repo
-4. Set:
-   - **Root Directory:** `backend`
-   - **Build Command:** `npm install`
-   - **Start Command:** `npm start`
-5. Add Environment Variables:
-   ```
-   MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/mini-crm
-   JWT_SECRET=your_random_secret
-   JWT_EXPIRES_IN=7d
-   PORT=5000
-   ```
-6. Deploy → copy your backend URL (e.g., `https://mini-crm-api.onrender.com`)
-
----
-
-### Frontend → Netlify
-
-1. In `frontend/.env`, set:
-   ```
-   REACT_APP_API_URL=https://mini-crm-api.onrender.com/api
-   ```
-2. Build the app:
-   ```bash
-   cd frontend
-   npm run build
-   ```
-3. Go to [netlify.com](https://netlify.com) → **Add new site** → **Deploy manually**
-4. Drag and drop the `frontend/build/` folder
-5. Done! Your site is live.
-
-**OR deploy via Git:**
-1. Push frontend to GitHub
-2. New site from Git → choose repo
-3. Set:
-   - **Base directory:** `frontend`
-   - **Build command:** `npm run build`
-   - **Publish directory:** `frontend/build`
-4. Add environment variable: `REACT_APP_API_URL=https://your-backend.onrender.com/api`
-
-> The `public/_redirects` file is already included so React Router works correctly on Netlify.
-
----
-
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Route | Description |
 |--------|-------|-------------|
@@ -181,7 +131,7 @@ Frontend runs on: **http://localhost:3000**
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tech |
 |-------|------|
